@@ -1,0 +1,30 @@
+{
+    "workbench.colorTheme": "Solarized Dark",
+    "workbench.startupEditor": "none",
+    "latex-workshop.view.pdf.color.dark.backgroundColor": "#000000",
+    "latex-workshop.view.pdf.color.dark.pageColorsBackground": "#002b36",
+    "latex-workshop.view.pdf.color.dark.pageColorsForeground": "#fdf6e3",
+    "workbench.iconTheme": "vscode-icons",
+    "editor.fontFamily": "'Source Code Pro', 'monospace', monospace",
+    "latex-workshop.intellisense.atSuggestion.user": {
+        "@O": "\\mathcal{O}"
+    },
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-shell-escape",
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "-outdir=%OUTDIR%",
+                "%DOC%"
+            ],
+            "env": {}
+        }
+    ],
+    "search.followSymlinks": false,
+    "wolfram.kernel": "/usr/bin/WolframKernel"
+}

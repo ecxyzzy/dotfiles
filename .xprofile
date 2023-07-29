@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Compose key is good and everyone should use it.
+setxkbmap -option compose:ralt
