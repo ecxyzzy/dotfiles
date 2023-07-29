@@ -2,3 +2,8 @@
 
 # Compose key is good and everyone should use it.
 setxkbmap -option compose:ralt
+
+# fcitx5 stuff
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
