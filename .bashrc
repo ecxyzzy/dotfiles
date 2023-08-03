@@ -43,19 +43,22 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 
+# docker
+export DOCKER_HOST=unix:///run/user/1000/docker.sock
+
 # My own stuff
 
 # PATH
 export PATH="$PATH:/home/ecxyzzy/.local/share/JetBrains/Toolbox/scripts:/home/ecxyzzy/.local/bin:/home/ecxyzzy/bin"
-
-# Fallback prompt that still looks cool if running in a terminal without omp support (e.g. ttyN)
-export PS1='\[\e[0;32m\]\u\[\e[m\]@\[\e[0;32m\]\h\[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]\$\[\e[m\] '
 
 # The One True Editor
 export EDITOR=vim
 
 # Initialize OMP with my preferred config
 eval "$(oh-my-posh init bash --config /usr/share/oh-my-posh/themes/slimfat.omp.json)"
+
+# Fallback prompt that still looks cool if running in a terminal without omp support (e.g. ttyN)
+export PS1='\[\e[0;32m\]\u\[\e[m\]@\[\e[0;32m\]\h\[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]\$\[\e[m\] '
 
 # kitty ssh
 [[ "$TERM" = "xterm-kitty" ]] && alias ssh="kitty +kitten ssh"
