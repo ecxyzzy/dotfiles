@@ -5,7 +5,7 @@
     "latex-workshop.view.pdf.color.dark.pageColorsBackground": "#002b36",
     "latex-workshop.view.pdf.color.dark.pageColorsForeground": "#fdf6e3",
     "workbench.iconTheme": "vscode-icons",
-    "editor.fontFamily": "'Source Code Pro', 'monospace', monospace",
+    "editor.fontFamily": "'SauceCodePro Nerd Font Mono', monospace",
     "latex-workshop.intellisense.atSuggestion.user": {
         "@O": "\\mathcal{O}"
     },
@@ -26,5 +26,8 @@
         }
     ],
     "search.followSymlinks": false,
-    "wolfram.kernel": "/usr/bin/WolframKernel"
+    "wolfram.kernel": "/usr/bin/WolframKernel",
+    "window.zoomLevel": 1,
+    "terminal.external.linuxExec": "kitty",
+    "terminal.integrated.shellIntegration.decorationsEnabled": "never"
 }
