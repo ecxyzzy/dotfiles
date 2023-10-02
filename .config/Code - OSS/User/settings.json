@@ -4,7 +4,6 @@
     "latex-workshop.view.pdf.color.dark.backgroundColor": "#000000",
     "latex-workshop.view.pdf.color.dark.pageColorsBackground": "#002b36",
     "latex-workshop.view.pdf.color.dark.pageColorsForeground": "#fdf6e3",
-    "workbench.iconTheme": "vscode-icons",
     "editor.fontFamily": "'SauceCodePro Nerd Font Mono', monospace",
     "latex-workshop.intellisense.atSuggestion.user": {
         "@O": "\\mathcal{O}"
@@ -14,6 +13,7 @@
             "name": "latexmk",
             "command": "latexmk",
             "args": [
+                "-bibtex",
                 "-shell-escape",
                 "-synctex=1",
                 "-interaction=nonstopmode",
@@ -26,8 +26,10 @@
         }
     ],
     "search.followSymlinks": false,
-    "wolfram.kernel": "/usr/bin/WolframKernel",
-    "window.zoomLevel": 1,
     "terminal.external.linuxExec": "kitty",
-    "terminal.integrated.shellIntegration.decorationsEnabled": "never"
+    "terminal.integrated.shellIntegration.decorationsEnabled": "never",
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "haskell.manageHLS": "GHCup",
+    "material-icon-theme.activeIconPack": "none",
+    "workbench.iconTheme": "material-icon-theme",
 }
