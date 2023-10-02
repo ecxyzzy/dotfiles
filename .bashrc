@@ -49,7 +49,7 @@ export DOCKER_HOST=unix:///run/user/1000/docker.sock
 # My own stuff
 
 # PATH
-export PATH="$PATH:/home/ecxyzzy/.local/share/JetBrains/Toolbox/scripts:/home/ecxyzzy/.local/bin:/home/ecxyzzy/bin"
+export PATH="$PATH:/home/ecxyzzy/.ghcup/bin:/home/ecxyzzy/.local/share/JetBrains/Toolbox/scripts:/home/ecxyzzy/.local/bin:/home/ecxyzzy/bin"
 
 # The One True Editor
 export EDITOR=vim
