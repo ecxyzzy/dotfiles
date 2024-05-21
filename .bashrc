@@ -63,5 +63,5 @@ export PS1='\[\e[0;32m\]\u\[\e[m\]@\[\e[0;32m\]\h\[\e[m\] \[\e[1;34m\]\w\[\e[m\]
 # kitty ssh
 [[ "$TERM" = "xterm-kitty" ]] && alias ssh="kitty +kitten ssh"
 
-# because no archbtw bashrc would be complete without invoking neofetch when starting every session
-neofetch
+# because no archbtw bashrc would be complete without invoking fastfetch when starting every session
+fastfetch
