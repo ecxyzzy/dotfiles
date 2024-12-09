@@ -65,3 +65,18 @@ export PS1='\[\e[0;32m\]\u\[\e[m\]@\[\e[0;32m\]\h\[\e[m\] \[\e[1;34m\]\w\[\e[m\]
 
 # because no archbtw bashrc would be complete without invoking fastfetch when starting every session
 fastfetch
+
+# >>> juliaup initialize >>>
+
+# !! Contents within this block are managed by juliaup !!
+
+case ":$PATH:" in
+    *:/home/ecxyzzy/.juliaup/bin:*)
+        ;;
+
+    *)
+        export PATH=/home/ecxyzzy/.juliaup/bin${PATH:+:${PATH}}
+        ;;
+esac
+
+# <<< juliaup initialize <<<
