@@ -23,6 +23,15 @@
                 "%DOC%"
             ],
             "env": {}
+        },
+        {
+            "name": "xelatex",
+            "command": "xelatex",
+            "args": [
+                "-output-directory=%OUTDIR%",
+                "%DOC%"
+            ],
+            "env": {},
         }
     ],
     "search.followSymlinks": false,
@@ -30,6 +39,31 @@
     "terminal.integrated.shellIntegration.decorationsEnabled": "never",
     "editor.unicodeHighlight.nonBasicASCII": false,
     "haskell.manageHLS": "GHCup",
+    "haskell.serverEnvironment": {
+        "PATH": "${HOME}/.ghcup/bin:$PATH"
+    },
     "material-icon-theme.activeIconPack": "none",
     "workbench.iconTheme": "material-icon-theme",
+    "editor.multiCursorLimit": 100000,
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk",
+            "tools": [
+                "latexmk"
+            ]
+        },
+    ],
+    "editor.unicodeHighlight.allowedCharacters": {
+        "　": true
+    },
+    "terminal.integrated.commandsToSkipShell": [
+        "language-julia.interrupt"
+    ],
+    "julia.symbolCacheDownload": true,
+    "julia.executablePath": "/home/ecxyzzy/.juliaup/bin/julia",
+    "julia.enableTelemetry": true,
+    "[julia]": {
+        "editor.defaultFormatter": "julialang.language-julia"
+    },
+    "typescript.updateImportsOnFileMove.enabled": "always",
 }
