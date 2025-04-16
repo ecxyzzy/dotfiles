@@ -55,7 +55,7 @@ export PATH="$PATH:/home/ecxyzzy/.ghcup/bin:/home/ecxyzzy/.local/share/JetBrains
 export EDITOR=vim
 
 # Initialize OMP with my preferred config
-eval "$(oh-my-posh init bash --config /usr/share/oh-my-posh/themes/slimfat.omp.json)"
+eval "$(oh-my-posh init bash --config /usr/share/oh-my-posh/themes/powerlevel10k_rainbow.omp.json)"
 
 # Fallback prompt that still looks cool if running in a terminal without omp support (e.g. ttyN)
 export PS1='\[\e[0;32m\]\u\[\e[m\]@\[\e[0;32m\]\h\[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]\$\[\e[m\] '
