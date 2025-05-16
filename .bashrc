@@ -63,13 +63,7 @@ export PS1='\[\e[0;32m\]\u\[\e[m\]@\[\e[0;32m\]\h\[\e[m\] \[\e[1;34m\]\w\[\e[m\]
 # kitty ssh
 [[ "$TERM" = "xterm-kitty" ]] && alias ssh="kitty +kitten ssh"
 
-# because no archbtw bashrc would be complete without invoking fastfetch when starting every session
-fastfetch
-
-# >>> juliaup initialize >>>
-
-# !! Contents within this block are managed by juliaup !!
-
+# juliaup, allegedly
 case ":$PATH:" in
     *:/home/ecxyzzy/.juliaup/bin:*)
         ;;
@@ -79,4 +73,7 @@ case ":$PATH:" in
         ;;
 esac
 
-# <<< juliaup initialize <<<
+# because no archbtw bashrc would be complete without invoking fastfetch when starting every session
+fastfetch
+
+
