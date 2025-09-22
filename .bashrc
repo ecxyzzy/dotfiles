@@ -73,7 +73,14 @@ case ":$PATH:" in
         ;;
 esac
 
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - bash)"
+
+# conda
+[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
+
 # because no archbtw bashrc would be complete without invoking fastfetch when starting every session
 fastfetch
-
 

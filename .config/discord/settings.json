@@ -4,11 +4,13 @@
   "WINDOW_BOUNDS": {
     "x": 10,
     "y": 10,
-    "width": 1900,
+    "width": 946,
     "height": 1155
   },
   "OPEN_ON_STARTUP": false,
   "SKIP_HOST_UPDATE": true,
   "chromiumSwitches": {},
-  "BACKGROUND_COLOR": "#000000"
+  "BACKGROUND_COLOR": "#000000",
+  "offloadAdmControls": true,
+  "enableHardwareAcceleration": true
 }

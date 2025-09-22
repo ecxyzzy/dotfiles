@@ -66,4 +66,6 @@
         "editor.defaultFormatter": "julialang.language-julia"
     },
     "typescript.updateImportsOnFileMove.enabled": "always",
+    "latex-utilities.countWord.format": "${wordsBody} Words",
+    "git.enableSmartCommit": true,
 }
